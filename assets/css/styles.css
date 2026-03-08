@@ -22,6 +22,17 @@ body {
     letter-spacing: 2px;
 }
 
+.navbar-brand img {
+    max-height: 45px; /* Ajusta según el tamaño de tu logo */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
+
 /* Cards Modernas */
 .product-card {
     border: none;
