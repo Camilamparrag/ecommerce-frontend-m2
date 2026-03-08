@@ -1,0 +1,68 @@
+:root {
+    --diaromas-cafe-fuerte: #5D4037;
+    --diaromas-cafe-claro: #D7CCC8;
+    --diaromas-crema: #F5F5F5;
+    --diaromas-blanco-puro: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--diaromas-crema);
+    color: var(--diaromas-cafe-fuerte);
+}
+
+/* Navbar Minimalista */
+.navbar {
+    background-color: var(--diaromas-blanco-puro) !important;
+    border-bottom: 1px solid var(--diaromas-cafe-claro);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--diaromas-cafe-fuerte) !important;
+    letter-spacing: 2px;
+}
+
+/* Cards Modernas */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-color: var(--diaromas-blanco-puro);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(93, 64, 55, 0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Botones con estilo */
+.btn-diaromas {
+    background-color: var(--diaromas-cafe-fuerte);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.btn-diaromas:hover {
+    background-color: #3E2723;
+    color: white;
+}
+
+.btn-outline-diaromas {
+    border: 2px solid var(--diaromas-cafe-claro);
+    color: var(--diaromas-cafe-fuerte);
+    border-radius: 50px;
+}
+
+/* Responsive fixes */
+@media (max-width: 420px) {
+    .display-4 { font-size: 2rem; }
+}

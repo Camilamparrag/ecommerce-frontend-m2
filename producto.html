@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle | Diaromas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white">
+    <nav class="navbar navbar-light mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DIAROMAS</a>
+            <a href="index.html" class="btn btn-link text-dark text-decoration-none">← Volver</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <img id="det-img" src="assets/img/Gemini_Generated_Image_va0lfeva0lfeva0l (1).png" class="img-fluid rounded-4 shadow" alt="">
+            </div>
+            <div class="col-md-6 ps-md-5">
+                <h1 id="det-nom" class="display-5 fw-bold">Lino Blanco</h1>
+                <p id="det-pre" class="h3 text-muted mb-4">$17.990</p>
+                <hr class="my-4" style="border-color: var(--diaromas-cafe-claro);">
+                <p id="det-desc" class="lead mb-5 text-secondary">Una fragancia fresca y delicada que evoca la pureza de las sábanas recién lavadas secándose al sol. Sus notas limpias y suaves combinan la frescura del algodón con ligeros toques florales y un fondo sutilmente almizclado. Lino Blanco crea un ambiente de calma, orden y bienestar, perfecto para llenar cualquier espacio con una sensación de limpieza, serenidad y confort.</p>
+                <button class="btn btn-diaromas btn-lg px-5 shadow" onclick="alert('¡Añadido!')">Agregar al Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id') || 1; 
+        // Aquí podrías filtrar el array 'productos' para llenar los campos
+    </script>
+</body>
+</html>
