@@ -8,32 +8,31 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-white">
-    <nav class="navbar navbar-light mb-5">
+    <nav class="navbar mb-5">
         <div class="container">
             <a class="navbar-brand" href="index.html">DIAROMAS</a>
-            <a href="index.html" class="btn btn-link text-dark text-decoration-none">← Volver</a>
+            <a href="index.html" class="btn btn-link text-dark">← Volver</a>
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container py-5">
         <div class="row align-items-center">
-            <div class="col-md-6 mb-4">
-                <img id="det-img" src="assets/img/Gemini_Generated_Image_va0lfeva0lfeva0l (1).png" class="img-fluid rounded-4 shadow" alt="">
+            <div class="col-md-6 text-center">
+                <img id="det-img" src="" class="img-fluid rounded-4 shadow" alt="">
             </div>
             <div class="col-md-6 ps-md-5">
-                <h1 id="det-nom" class="display-5 fw-bold">Lino Blanco</h1>
-                <p id="det-pre" class="h3 text-muted mb-4">$17.990</p>
-                <hr class="my-4" style="border-color: var(--diaromas-cafe-claro);">
-                <p id="det-desc" class="lead mb-5 text-secondary">Una fragancia fresca y delicada que evoca la pureza de las sábanas recién lavadas secándose al sol. Sus notas limpias y suaves combinan la frescura del algodón con ligeros toques florales y un fondo sutilmente almizclado. Lino Blanco crea un ambiente de calma, orden y bienestar, perfecto para llenar cualquier espacio con una sensación de limpieza, serenidad y confort.</p>
-                <button class="btn btn-diaromas btn-lg px-5 shadow" onclick="alert('¡Añadido!')">Agregar al Carrito</button>
+                <h1 id="det-nom" class="display-5 fw-bold mb-3">Cargando...</h1>
+                <p id="det-pre" class="h3 text-muted mb-4">$000</p>
+                <p id="det-desc" class="lead mb-5 text-secondary">...</p>
+                <button class="btn btn-diaromas btn-lg px-5 shadow" onclick="addToCartFromDetail()">
+                    Agregar al Carrito
+                </button>
             </div>
         </div>
     </main>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get('id') || 1; 
-        // Aquí podrías filtrar el array 'productos' para llenar los campos
-    </script>
+    
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 :root {
     --diaromas-cafe-fuerte: #5D4037;
     --diaromas-cafe-claro: #D7CCC8;
-    --diaromas-crema: #F5F5F5;
-    --diaromas-blanco-puro: #FFFFFF;
+    --diaromas-crema: #FAF9F6;
+    --diaromas-blanco: #FFFFFF;
 }
 
 body {
@@ -11,44 +11,43 @@ body {
     color: var(--diaromas-cafe-fuerte);
 }
 
-/* Navbar Minimalista */
+/* Navbar */
 .navbar {
-    background-color: var(--diaromas-blanco-puro) !important;
+    background-color: var(--diaromas-blanco) !important;
     border-bottom: 1px solid var(--diaromas-cafe-claro);
 }
 
 .navbar-brand {
     font-weight: 700;
-    color: var(--diaromas-cafe-fuerte) !important;
     letter-spacing: 2px;
 }
 
 /* Cards Modernas */
 .product-card {
     border: none;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    background-color: var(--diaromas-blanco-puro);
+    border-radius: 20px;
+    background-color: var(--diaromas-blanco);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(93, 64, 55, 0.1);
+    box-shadow: 0 15px 30px rgba(93, 64, 55, 0.1);
 }
 
 .card-img-top {
-    height: 250px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
-/* Botones con estilo */
+/* Botones */
 .btn-diaromas {
     background-color: var(--diaromas-cafe-fuerte);
     color: white;
     border-radius: 50px;
-    padding: 10px 25px;
     border: none;
+    padding: 10px 20px;
 }
 
 .btn-diaromas:hover {
@@ -62,7 +61,12 @@ body {
     border-radius: 50px;
 }
 
-/* Responsive fixes */
-@media (max-width: 420px) {
-    .display-4 { font-size: 2rem; }
+/* FOOTER */
+footer {
+    border-color: var(--diaromas-cafe-claro) !important;
+}
+
+footer .text-muted:hover {
+    color: var(--diaromas-cafe-fuerte) !important;
+    transition: 0.3s;
 }
